@@ -100,4 +100,132 @@ header p {
 /* BADGES */
 .badge {
   display: inline-block;
-  margin-top:
+  margin-top: 0.9rem;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  background: var(--gold);
+  color: var(--brown);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* NAP BADGE */
+.badge-nap {
+  background: #000;
+  color: #fff;
+  animation: napPulse 2s infinite;
+}
+
+@keyframes napPulse {
+  0% { box-shadow: 0 0 8px rgba(0,0,0,0.4); }
+  50% { box-shadow: 0 0 18px rgba(0,0,0,0.8); }
+  100% { box-shadow: 0 0 8px rgba(0,0,0,0.4); }
+}
+
+/* CONFIDENCE */
+.confidence {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* RESULTS */
+.results {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.result-btn {
+  flex: 1;
+  padding: 0.45rem 0;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: #eee;
+  color: #555;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>DIOR RACING VIP</h1>
+  <p>PRIVATE GREYHOUND SELECTIONS</p>
+</header>
+
+<div class="container">
+
+  <div class="selections">
+
+    <!-- NAP -->
+    <div class="selection-card nap">
+      <h3>Monmore</h3>
+      <p><strong>Race Time:</strong> 3:58</p>
+      <p><strong>Selection:</strong> Trap 2 – Droopys Maximus</p>
+      <p><strong>Odds:</strong> 3/1</p>
+
+      <div class="confidence">CONFIDENCE: 78%</div>
+      <span class="badge badge-nap">NAP</span>
+
+      <div class="results">
+        <div class="result-btn">WIN</div>
+        <div class="result-btn">LOSS</div>
+        <div class="result-btn">PENDING</div>
+      </div>
+    </div>
+
+    <div class="selection-card">
+      <h3>Romford</h3>
+      <p><strong>Race Time:</strong> 12:34</p>
+      <p><strong>Selection:</strong> Trap 1 – Emmjay Jackson</p>
+      <p><strong>Odds:</strong> 4/1</p>
+
+      <div class="confidence">CONFIDENCE: 64%</div>
+      <span class="badge">WIN</span>
+
+      <div class="results">
+        <div class="result-btn">WIN</div>
+        <div class="result-btn">LOSS</div>
+        <div class="result-btn">PENDING</div>
+      </div>
+    </div>
+
+    <div class="selection-card">
+      <h3>Dunstall Park</h3>
+      <p><strong>Race Time:</strong> 12:42</p>
+      <p><strong>Selection:</strong> Trap 5 – Roanna Koko</p>
+      <p><strong>Odds:</strong> 10/3</p>
+
+      <div class="confidence">CONFIDENCE: 66%</div>
+      <span class="badge">WIN</span>
+
+      <div class="results">
+        <div class="result-btn">WIN</div>
+        <div class="result-btn">LOSS</div>
+        <div class="result-btn">PENDING</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © DIOR RACING VIP
+</footer>
+
+</body>
+</html>
