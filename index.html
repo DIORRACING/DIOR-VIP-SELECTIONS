@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-/* MINI DIOR LOGO PATTERN */
+/* DIOR PATTERN */
 body::before {
   content: "DIOR   DIOR   DIOR   DIOR   DIOR   DIOR   DIOR   DIOR";
   position: fixed;
@@ -35,7 +35,6 @@ body::before {
   letter-spacing: 6px;
   line-height: 60px;
   color: rgba(200,164,75,0.06);
-  white-space: pre-wrap;
   pointer-events: none;
   z-index: -1;
 }
@@ -66,7 +65,7 @@ header p {
   padding: 2rem;
 }
 
-/* SELECTION CARDS */
+/* CARDS */
 .selections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -81,6 +80,13 @@ header p {
   border-top: 4px solid var(--gold);
 }
 
+/* NAP CARD */
+.selection-card.nap {
+  border-top: 4px solid #000;
+  box-shadow: 0 22px 55px rgba(0,0,0,0.2);
+  transform: scale(1.03);
+}
+
 .selection-card h3 {
   margin: 0 0 0.6rem;
   letter-spacing: 1px;
@@ -91,69 +97,7 @@ header p {
   font-size: 0.95rem;
 }
 
+/* BADGES */
 .badge {
   display: inline-block;
-  margin-top: 0.9rem;
-  padding: 0.45rem 1rem;
-  border-radius: 20px;
-  background: var(--gold);
-  color: var(--brown);
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-footer {
-  text-align: center;
-  padding: 2.5rem;
-  font-size: 0.8rem;
-  color: #777;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>DIOR RACING VIP</h1>
-  <p>PRIVATE GREYHOUND SELECTIONS</p>
-</header>
-
-<div class="container">
-
-  <div class="selections">
-
-    <div class="selection-card">
-      <h3>Monmore</h3>
-      <p><strong>Race Time:</strong> 3:58</p>
-      <p><strong>Selection:</strong> Trap 2 – Droopys Maximus</p>
-      <p><strong>Odds:</strong> 3/1</p>
-      <span class="badge">NAP</span>
-    </div>
-
-    <div class="selection-card">
-      <h3>Romford</h3>
-      <p><strong>Race Time:</strong> 12:34</p>
-      <p><strong>Selection:</strong> Trap 1 – Emmjay Jackson</p>
-      <p><strong>Odds:</strong> 4/1</p>
-      <span class="badge">WIN</span>
-    </div>
-
-    <div class="selection-card">
-      <h3>Dunstall Park</h3>
-      <p><strong>Race Time:</strong> 12:42</p>
-      <p><strong>Selection:</strong> Trap 5 – Roanna Koko</p>
-      <p><strong>Odds:</strong> 10/3</p>
-      <span class="badge">WIN</span>
-    </div>
-
-  </div>
-
-</div>
-
-<footer>
-  © DIOR RACING VIP
-</footer>
-
-</body>
-</html>
+  margin-top:
