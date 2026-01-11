@@ -15,46 +15,30 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--brown);
-  position: relative;
-}
-
-/* DIOR PATTERN */
-body::before {
-  content: "DIOR   DIOR   DIOR   DIOR   DIOR   DIOR   DIOR   DIOR";
-  position: fixed;
-  inset: 0;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 60px;
-  color: rgba(200,164,75,0.06);
-  pointer-events: none;
-  z-index: -1;
 }
 
 header {
   background: var(--white);
   text-align: center;
-  padding: 2.8rem 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
   margin: 0;
-  letter-spacing: 4px;
-  font-size: 2.2rem;
+  letter-spacing: 3px;
 }
 
 header p {
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
   letter-spacing: 2px;
   color: #666;
 }
@@ -65,95 +49,77 @@ header p {
   padding: 2rem;
 }
 
-/* CARDS */
 .selections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 .selection-card {
   background: var(--white);
-  padding: 1.7rem;
-  border-radius: 18px;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  border-radius: 16px;
   border-top: 4px solid var(--gold);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* NAP CARD */
 .selection-card.nap {
   border-top: 4px solid #000;
-  box-shadow: 0 22px 55px rgba(0,0,0,0.2);
-  transform: scale(1.03);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.2);
 }
 
 .selection-card h3 {
   margin: 0 0 0.6rem;
-  letter-spacing: 1px;
 }
 
 .selection-card p {
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
   font-size: 0.95rem;
 }
 
-/* BADGES */
 .badge {
   display: inline-block;
-  margin-top: 0.9rem;
-  padding: 0.45rem 1rem;
+  margin-top: 0.7rem;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
-  background: var(--gold);
-  color: var(--brown);
   font-size: 0.75rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  background: var(--gold);
+  color: var(--brown);
 }
 
-/* NAP BADGE */
 .badge-nap {
   background: #000;
   color: #fff;
-  animation: napPulse 2s infinite;
 }
 
-@keyframes napPulse {
-  0% { box-shadow: 0 0 8px rgba(0,0,0,0.4); }
-  50% { box-shadow: 0 0 18px rgba(0,0,0,0.8); }
-  100% { box-shadow: 0 0 8px rgba(0,0,0,0.4); }
-}
-
-/* CONFIDENCE */
 .confidence {
   margin-top: 0.6rem;
   font-size: 0.85rem;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
-/* RESULTS */
 .results {
   margin-top: 1rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .result-btn {
   flex: 1;
-  padding: 0.45rem 0;
-  border-radius: 12px;
+  padding: 0.4rem;
   font-size: 0.7rem;
   font-weight: bold;
-  letter-spacing: 1px;
-  background: #eee;
-  color: #555;
   text-align: center;
+  background: #eee;
+  border-radius: 10px;
+  color: #555;
 }
 
 footer {
   text-align: center;
-  padding: 2.5rem;
-  font-size: 0.8rem;
+  padding: 2rem;
+  font-size: 0.75rem;
   color: #777;
 }
 </style>
@@ -167,16 +133,13 @@ footer {
 </header>
 
 <div class="container">
-
   <div class="selections">
 
-    <!-- NAP -->
     <div class="selection-card nap">
       <h3>Monmore</h3>
       <p><strong>Race Time:</strong> 3:58</p>
       <p><strong>Selection:</strong> Trap 2 – Droopys Maximus</p>
       <p><strong>Odds:</strong> 3/1</p>
-
       <div class="confidence">CONFIDENCE: 78%</div>
       <span class="badge badge-nap">NAP</span>
 
@@ -192,7 +155,6 @@ footer {
       <p><strong>Race Time:</strong> 12:34</p>
       <p><strong>Selection:</strong> Trap 1 – Emmjay Jackson</p>
       <p><strong>Odds:</strong> 4/1</p>
-
       <div class="confidence">CONFIDENCE: 64%</div>
       <span class="badge">WIN</span>
 
@@ -208,7 +170,6 @@ footer {
       <p><strong>Race Time:</strong> 12:42</p>
       <p><strong>Selection:</strong> Trap 5 – Roanna Koko</p>
       <p><strong>Odds:</strong> 10/3</p>
-
       <div class="confidence">CONFIDENCE: 66%</div>
       <span class="badge">WIN</span>
 
@@ -220,7 +181,6 @@ footer {
     </div>
 
   </div>
-
 </div>
 
 <footer>
