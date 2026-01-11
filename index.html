@@ -57,4 +57,114 @@ header p {
 /* BADGES */
 .badge {
   display: inline-block;
-  margin-top
+  margin-top: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #c8a44b;
+  color: #3b2a1a;
+}
+
+.badge.nap {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* RESULTS */
+.results {
+  margin-top: 14px;
+}
+
+.result {
+  display: inline-block;
+  width: 30%;
+  margin-right: 3%;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+.result.pending {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 11px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>DIOR RACING VIP</h1>
+  <p>PRIVATE GREYHOUND SELECTIONS</p>
+</header>
+
+<div class="wrapper">
+
+  <!-- NAP -->
+  <div class="card nap">
+    <h3>Monmore</h3>
+    <p><strong>Race Time:</strong> 3:58</p>
+    <p><strong>Selection:</strong> Trap 2 – Droopys Maximus</p>
+    <p><strong>Odds:</strong> 3/1</p>
+
+    <span class="badge nap">NAP</span>
+
+    <div class="results">
+      <div class="result">WIN</div>
+      <div class="result">LOSS</div>
+      <div class="result pending">PENDING</div>
+    </div>
+  </div>
+
+  <!-- SELECTION 2 -->
+  <div class="card">
+    <h3>Romford</h3>
+    <p><strong>Race Time:</strong> 12:34</p>
+    <p><strong>Selection:</strong> Trap 1 – Emmjay Jackson</p>
+    <p><strong>Odds:</strong> 4/1</p>
+
+    <span class="badge">WIN</span>
+
+    <div class="results">
+      <div class="result">WIN</div>
+      <div class="result">LOSS</div>
+      <div class="result pending">PENDING</div>
+    </div>
+  </div>
+
+  <!-- SELECTION 3 -->
+  <div class="card">
+    <h3>Dunstall Park</h3>
+    <p><strong>Race Time:</strong> 12:42</p>
+    <p><strong>Selection:</strong> Trap 5 – Roanna Koko</p>
+    <p><strong>Odds:</strong> 10/3</p>
+
+    <span class="badge">WIN</span>
+
+    <div class="results">
+      <div class="result">WIN</div>
+      <div class="result">LOSS</div>
+      <div class="result pending">PENDING</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © DIOR RACING VIP
+</footer>
+
+</body>
+</html>
