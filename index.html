@@ -1,147 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DIOR RACING VIP</title>
 
 <style>
-:root {
-  --gold: #c8a44b;
-  --brown: #3b2a1a;
-  --white: #ffffff;
-  --bg: #f7f5f2;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--brown);
+  background: #f7f5f2;
+  font-family: Arial, sans-serif;
+  color: #3b2a1a;
 }
 
 header {
-  background: var(--white);
+  background: #ffffff;
+  padding: 20px;
   text-align: center;
-  padding: 2rem 1rem;
   border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-  margin: 0;
-  letter-spacing: 3px;
-}
-
-header p {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  color: #666;
-}
-
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
-  padding: 2rem;
+  padding: 20px;
 }
 
-.selections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.selection-card {
-  background: var(--white);
-  padding: 1.5rem;
-  border-radius: 16px;
-  border-top: 4px solid var(--gold);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-top: 4px solid #c8a44b;
 }
 
-.selection-card.nap {
-  border-top: 4px solid #000;
-  box-shadow: 0 14px 35px rgba(0,0,0,0.2);
-}
-
-.selection-card h3 {
-  margin: 0 0 0.6rem;
-}
-
-.selection-card p {
-  margin: 0.3rem 0;
-  font-size: 0.95rem;
+.card.nap {
+  border-top: 4px solid #000000;
 }
 
 .badge {
   display: inline-block;
-  margin-top: 0.7rem;
-  padding: 0.4rem 1rem;
+  padding: 6px 14px;
+  margin-top: 10px;
   border-radius: 20px;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: bold;
-  background: var(--gold);
-  color: var(--brown);
+  background: #c8a44b;
 }
 
-.badge-nap {
-  background: #000;
-  color: #fff;
-}
-
-.confidence {
-  margin-top: 0.6rem;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.results {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.4rem;
-}
-
-.result-btn {
-  flex: 1;
-  padding: 0.45rem;
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-align: center;
-  background: #eee;
-  border-radius: 10px;
-  color: #555;
-}
-
-/* ✅ GREEN PENDING */
-.result-btn.pending {
-  background: #2e7d32;
+.badge.nap {
+  background: #000000;
   color: #ffffff;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.75rem;
-  color: #777;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>DIOR RACING VIP</h1>
-  <p>PRIVATE GREYHOUND SELECTIONS</p>
-</header>
-
-<div class="container">
-  <div class="selections">
-
-    <div class="selection-card nap">
-      <h3>Monmore</h3>
-      <p><strong>Race Time:</strong> 3:58</p>
-      <p><strong>Selection:</strong> Trap 2 – Droopys Maximus</
